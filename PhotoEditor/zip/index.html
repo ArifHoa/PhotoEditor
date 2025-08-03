@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced Photo Editor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="editor-container">
+    <h1>Photo Editor</h1>
+    <input type="file" id="upload" accept="image/*" />
+    <div class="canvas-wrapper">
+      <canvas id="canvas"></canvas>
+      <div id="text-layer"></div>
+    </div>
+
+    <div class="tools">
+      <button onclick="rotate(-90)">⟲ Rotate Left</button>
+      <button onclick="rotate(90)">⟳ Rotate Right</button>
+      <button onclick="flip('horizontal')">↔ Flip Horizontal</button>
+      <button onclick="flip('vertical')">↕ Flip Vertical</button>
+      <button onclick="startCrop()">✂️ Start Crop</button>
+      <button onclick="applyCrop()">✅ Apply Crop</button>
+      <button onclick="addText()">🅰️ Add Text</button>
+      <button onclick="addSticker()">🖼️ Add Emoji</button>
+      <button onclick="downloadImage()">💾 Download</button>
+      <button onclick="reset()">Reset</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
