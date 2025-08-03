@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  text-align: center;
+  padding: 20px;
+}
+.editor-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.canvas-wrapper {
+  position: relative;
+  display: inline-block;
+}
+#canvas {
+  border: 1px solid #ccc;
+  max-width: 100%;
+}
+#text-layer {
+  position: absolute;
+  top: 0; left: 0;
+  pointer-events: none;
+}
+.tools {
+  margin-top: 20px;
+}
+button {
+  margin: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.text-box, .emoji {
+  position: absolute;
+  font-size: 24px;
+  cursor: move;
+  user-select: none;
+  pointer-events: auto;
+}
